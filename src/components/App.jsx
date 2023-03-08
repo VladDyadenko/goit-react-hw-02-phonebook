@@ -19,13 +19,21 @@ class App extends Component {
 
   addContact =({name, number})=>{
 
-    const newContact =  {id: nanoid(), name, number}
+    const {contacts} = this.state;
     
-   this.setState(({contacts}) => (
-    {contacts:[newContact, ...contacts]}
-   ))
-       
+    const newContact =  {id: nanoid(), name, number};
+
+    contacts.some(contact =>
+      contact.name === name) ?
+      alert(`${name} is already in contacts.`) :
+
+          this.setState(({contacts}) => (
+        {contacts:[newContact, ...contacts]}
+      ));
+    
+    
   };
+  
 
   hendleDeleteContact =(contactId)=>{
 

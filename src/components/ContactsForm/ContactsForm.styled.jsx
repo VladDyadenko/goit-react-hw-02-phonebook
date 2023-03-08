@@ -43,10 +43,13 @@ export const Label= styled.label`
 `;
 
 export const Btn = styled.button`
-   
-   border: none;
-   margin-left: auto;
-   margin-right:auto;
+
+
+    min-width:160px;
+    height: 40px;
+    border: none;
+    margin-left: auto;
+    margin-right:auto;
     cursor: pointer;
     font-family: 'Roboto Slab', sans-serif;
     font-weight: 500;

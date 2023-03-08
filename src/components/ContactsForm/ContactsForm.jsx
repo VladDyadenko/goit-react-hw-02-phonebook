@@ -40,7 +40,7 @@ class ContactForm extends Component {
 
     render(){
      const {name, number}= this.state;
-     const  iconStyles = {fill:'#006400', marginLeft: "5px",}
+     const  iconStyles = {fill:'#FFFFFF', marginLeft: "10px"}
 
 
         return (
@@ -69,7 +69,7 @@ class ContactForm extends Component {
                 </Label>
                 <Btn type="submit">
                 Add contact
-                <FaUserPlus style={iconStyles} size={16}></FaUserPlus></Btn>
+                <FaUserPlus style={iconStyles} size={20}></FaUserPlus></Btn>
             </Form>
 
 

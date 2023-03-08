@@ -27,9 +27,9 @@ const svgStyleUser = {fill:'#FF4500', marginLeft: '8px'}
 ContactList.propTypes ={
     contactList: PropTypes.arrayOf(
         PropTypes.shape({
-            id: PropTypes.string,
-            name: PropTypes.string,
-            number: PropTypes.string
+            id: PropTypes.string.isRequired,
+            name: PropTypes.string.isRequired,
+            number: PropTypes.string.isRequired,
         })
     ).isRequired,
     hendleDeleteContact: PropTypes.func.isRequired,

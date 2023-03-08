@@ -57,6 +57,7 @@ class App extends Component {
     const filter = this.state.filter;
     const changeFilter = this.changeFilter;
     const contact = this.addContact;
+   
           
 
      return (

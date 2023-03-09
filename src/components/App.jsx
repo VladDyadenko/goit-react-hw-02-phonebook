@@ -24,7 +24,7 @@ class App extends Component {
     const newContact =  {id: nanoid(), name, number};
 
     contacts.some(contact =>
-      contact.name === name) ?
+      contact.name.toLowerCase() === name.toLowerCase()) ?
       alert(`${name} is already in contacts.`) :
 
           this.setState(({contacts}) => (
